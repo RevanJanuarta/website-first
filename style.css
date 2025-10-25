@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10x 20x;
+    box-shadow: 0px0.5px;
+    align-items: center;
+}
+
+.left-bar h1{
+    color: rgb(255, 0, 0)
+}
+
+.right-bar a{
+    text-decoration: none;
+    color:black;
+    transition:0.25s ease ;
+    padding: 2px;
+}
+
+.right-bar a:hover {
+    color: aqua;
+    font-size: 18px;
+}
+
+.headshot-img img{
+    height: 500px;
+}
+
+.hero-section{
+    display: flex;
+    padding: 50px 80px;
+    height: 90vh;
+}
+
+.left-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-section{
+    margin-top: 20px;
+}
+
