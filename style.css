@@ -4,28 +4,54 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-.navbar{
-    display: flex;
+.mobile-navbar{
+    display: none;
     justify-content: space-between;
     padding: 10x 20x;
     box-shadow: 0px0.5px;
     align-items: center;
 }
 
+.mobile-right-bar button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+
+.mobile-links{
+    display: none;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10x 20x;
+    box-shadow: 0px0.5px;
+    align-items: center;
+
+    
+}
+
 .left-bar h1{
-    color: rgb(255, 0, 0)
+    color: rgb(0, 0, 0)
 }
 
 .right-bar a{
     text-decoration: none;
-    color:black;
-    transition:0.25s ease ;
+    color:rgb(0, 0, 0);
+    transition: 0.25s ease ;
     padding: 2px;
 }
 
 .right-bar a:hover {
-    color: aqua;
-    font-size: 18px;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
 }
 
 .headshot-img img{
@@ -48,4 +74,58 @@
 .btn-section{
     margin-top: 20px;
 }
+.btn-section .btn1{
+    background-color: rgb(red, green, blue);
+    color:rgb(255, 0, 0);
+    padding: 10px;
+    border: 2px solid grey;
+    
+    border-radius: 100px;
+}
 
+.btn-section .btn2{
+    background-color: rgb(rgb(30, 0, 255), green, blue);
+    color: rgb(0, 68, 255);
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 100px;
+}
+.left-section h1{
+    font-size: 80px;
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+}
+    @media screen and (max-width:768px){
+    .hero-section{
+        flex-direction:column-reverse;
+        padding: 20px;
+        align-items: center;
+    }
+    .headshot-img img {
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .left-section h1 {
+        font-size: 40px;
+        text-align:center;
+    }
+    .left-section p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .btn-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .navbar{
+            display: none;
+        }
+        .mobile-navbar{
+            display: flex;
+        }
+}
+        
+    
